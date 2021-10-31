@@ -16,9 +16,13 @@ Task 1a - Voting Age
 Do the following:   
    1. Create a variable called votingAge and assign it a value
    2. Console log true if age is 18 or higher
+   
 
    HINT: no function required
 */
+let votingAge = 18;
+
+console.log(true);
 
 
 
@@ -32,6 +36,14 @@ Do the following:
 
    HINT: no function required
 */
+let dog = 7;
+let cat = 4;
+if(dog > cat){
+  console.log(dog+1)
+} else{
+  console.log(dog-1)
+}
+
 
 
 
@@ -47,6 +59,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+const party = "1999";
+
+console.log(Number(party));
 
 
 
@@ -54,15 +69,17 @@ Do the following:
 /*
 Task 1d - Multiply
  
-Do the following:   
-   1. Invoke the multiply function below and pass it two numbers
-   2. Receive the parameters: a and b
-   3. Multiply a and b and return the answer
+
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+ return a*b;
 }
+
+
+
+
+
 
 
 
