@@ -306,9 +306,27 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+ // program to count the number of vowels in a string
+
+
+
+  // find the count of vowels
+  const count = str.match(/[aeiou]/gi).length;
+
+ 
+  return count;
 }
+console.log(vowelCounter("sam is a rookoie"))
+
+
+
+
+
+  
+
+
+
 
 
 
