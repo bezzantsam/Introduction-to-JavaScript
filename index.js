@@ -140,13 +140,17 @@ function hungryDog(weight, age){
    return (weight * 0.02);
  }else if (age < 1 && age > 1/6 && age < 2/6){
    return (weight * 0.10);
-  }else if (age < 1 && age >= 2/6 && age < 7/12){
+  }else if (age < 1 && age >= 2/6 && age <= 7/12){
     return ( weight * 0.05);
-  }else if (age < 1 && age >= 7/12){
+  }else if (age > 7/12){
     return ( weight * 0.04);
   }
+ 
 
 }
+
+console.log(7.4/0.32); 
+
 
 
 
@@ -184,11 +188,23 @@ function game(user, computer){
  if (computer >= .66){
    return "scissors";
  }
- if (user = computer){
+ if (user === computer){
    return "it's a tie"
-}
-
-
+}else if(user === "paper" && computer === "rock") {
+    return "you win!"
+ }else if (user === "paper" && computer === "scissors" ){
+   return  "you lose!"
+ }else if (user === "rock" && computer === "paper"){
+   return "you lose!"
+ }else if (user === "rock" && computer ==="scissors") {
+   return "you win!"
+ }else if (user === "scissors" && computer === "rock"){
+   return "you lose!"
+ }else if (user = "scissors" && computer === "paper"){
+   return "you win!"
+ }
+ 
+   
 
 }
 
@@ -206,9 +222,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  return (kilometers*0.621371);
 }
+console.log(miles(2));
 
 
 
